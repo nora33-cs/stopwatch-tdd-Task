@@ -48,6 +48,6 @@ void eightWorkingHoursShouldBecomeOneDay() {
 
     stopWatch.record(8 * 60);
 
-    Assertions.assertEquals(1, stopWatch.getDays());
+    Assertions.assertEquals(1, stopWatch.getWorkingDays());
 }
 }
