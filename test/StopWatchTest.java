@@ -22,4 +22,15 @@ void test2() {
         Assertions.fail("Invalid value");
     }
 }
+@Test
+void sixtyMinutesShouldBecomeOneHour() {
+    // Arrange
+    StopWatch stopWatch = new StopWatch();
+
+    // Act
+    stopWatch.record(60);
+
+    // Assert
+    Assertions.assertEquals(1, stopWatch.getHours());
+}
 }
