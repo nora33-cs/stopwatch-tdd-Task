@@ -42,4 +42,12 @@ void twentyFourHoursShouldBecomeOneDay() {
 
     Assertions.assertEquals(1, stopWatch.getDays());
 }
+@Test
+void eightWorkingHoursShouldBecomeOneDay() {
+    StopWatch stopWatch = new StopWatch();
+
+    stopWatch.record(8 * 60);
+
+    Assertions.assertEquals(1, stopWatch.getDays());
+}
 }
