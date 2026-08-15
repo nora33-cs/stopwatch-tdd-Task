@@ -28,9 +28,18 @@ void sixtyMinutesShouldBecomeOneHour() {
     StopWatch stopWatch = new StopWatch();
 
     // Act
-    stopWatch.record(60);
+    stopWatch.record(70);
 
     // Assert
     Assertions.assertEquals(1, stopWatch.getHours());
+    Assertions.assertEquals(10, stopWatch.getMinutes());
+}
+@Test
+void twentyFourHoursShouldBecomeOneDay() {
+    StopWatch stopWatch = new StopWatch();
+
+    stopWatch.record(1440);
+
+    Assertions.assertEquals(1, stopWatch.getDays());
 }
 }

@@ -7,6 +7,7 @@ public class StopWatch {
     if (minutes >= 0) {
         this.minutes = minutes;
         this.hours = minutes / 60;
+        this.minutes = minutes % 60;
     }
 }
 
